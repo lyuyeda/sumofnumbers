@@ -3,12 +3,14 @@ function sumFor(list) {
   for(let i = 0; i < list.length; i++){
     ret += list[i];
   }
+  return ret;
 }
 function sumWhile(list) {
   let ret = 0;
   while(list.length > 0){
     ret += list.pop();
   }
+  return ret;
 }
 function sumRecursion(list,ret) {
   if(list.length == 0){
